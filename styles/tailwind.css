@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* html, body,heading */
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+@layer base {
+	body {
+		@apply bg-[#141414] text-white;
+	}
+
+	header {
+		@apply fixed top-0 z-50 flex w-full items-center justify-between  px-4 py-3 transition-all lg:px-10 lg:py-2 -mt-4;
+	}
+}
+
+@layer components {
+	.headerLink {
+		@apply cursor-pointer text-sm font-light text-[#e5e5e5] transition duration-[.4s]  hover:text-[#b3b3b3];
+	}
+
+	.header-bg {
+		@apply bg-white;
+	}
+
+	.custom-border{
+		@apply absolute bottom-0 left-0 w-[100%] overflow-hidden leading-none 
+	}
+
+	.custom-border svg{
+		@apply relative block w-[calc(100%+1.3px)] h-[150px] 
+	}
+
+	.custom-border .shape-fill-border{
+		@apply bg-[#FFFFFF]
+	}
+
+	@media screen and (min-width: 1024px) {
+		.cb {
+			@apply cursor-pointer top-14;
+		}
+		.ms {
+			@apply top-60;
+		}
+	}
+
+	@media screen and (min-width: 820px) {
+		.problems {
+			@apply right-5;
+		}
+	}
+
+	@media screen and (min-width: 768px) {
+		.problems {
+			@apply right-12;
+		}
+	}
+
+	@media screen and (min-width: 370px) {
+		.email {
+			@apply bottom-0;
+		}
+		.pemail {
+			@apply w-[250px] overflow-hidden;
+		}
+	}
+
+	@media screen and (min-width: 360px) {
+		.leaders {
+			@apply h-[180px];
+		}
+	}
+
+	.arrowBlock {
+		@apply bg-gray-400 top-[3rem] leading-[22px] text-center left-[230px] p-[5px] w-[100px] h-[30px] rounded-full text-black cursor-pointer after:absolute after:w-0 after:h-0 after:border-t-[10px] after:border-t-gray-400 after:border-l-[10px] after:border-l-transparent after:border-r-[10px] after:border-r-transparent after:border-b-[10px] after:border-b-transparent after:left-[32%] after:top-[11.5%] after:-ml-[10px];
+	}
+	/* 
+	.arrowBlock::after {
+		@apply absolute  w-0 h-0 border-t-[10px] border-t-red-500 border-l-[10px] border-l-transparent border-r-[10px] border-r-transparent border-b-[10px] border-b-transparent left-[50%] top-[100%] -ml-[10px];
+	} */
+}

@@ -1,0 +1,32 @@
+Login : /api/v1/user/signin
+Signup : /api/v1/user/signup
+AllUsers : /api/v1/admin/user/allusers
+GetUserById : /api/v1/admin/user/getuserbyid/:userId
+DeleteUserById : /api/v1/admin/user/deleteuser/:userId
+UserProfile : /api/v1/user/getuserprofile
+GenerateResetToken : /api/v1/user/generatetoken
+ResetPassword : api/v1/user/resetpassword
+GetBlogs : /api/v1/blog
+AddCompany : /api/v1/admin/company/addcompany
+EditCompany : /api/v1/company/editcompany/companyId
+GetAllSuccessStories : /api/v1/admin/story/getallstories
+GetAllEnrollments : /api/v1/admin/program/getallenrollments
+CreateBlog : /api/v1/blog/post
+
+
+##Program can only be joined when the course has been added to the cart
+
+AddToCart : /api/v1/user/addtocart
+JoinProgram : /api/v1/program/joinprogram
+
+
+#######
+
+CreateCoupon : /api/v1/admin/coupon/createcoupon
+EnrolledUsers : /api/v1/admin/user/enrolledusers
+AdminProgramEnrollmentWithoutPay : api/v1/admin/program/joinprogramadmn
+DeleteBlog : /api/v1/blog/deleteid/blogId
+UpdateBlog : /api/v1/blog/update/blogId
+CreateProgram : /api/v1/admin/program/createprogram
+
+
